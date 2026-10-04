@@ -1,4 +1,6 @@
 #include <Arduino_GFX_Library.h>
+#include <TouchDrv.hpp>
+#include "TAMC_GT911.h"
 
 #define LCD_SCLK 39
 #define LCD_MOSI 38
@@ -12,6 +14,18 @@
 #define LCD_H_RES 240
 #define LCD_V_RES 320
 
+const int freq = 50000;
+const int channel = 0;
+const int resolution = 8;
+
+//Touch
+#define TOUCH_SDA 17
+#define TOUCH_SCL 18
+#define TOUCH_INT -1
+#define TOUCH_RST 38
+#define TOUCH_WIDTH 800
+#define TOUCH_HEIGHT 480
+
 
 Arduino_DataBus *bus = new Arduino_ESP32SPI(
   LCD_DC /* DC */, LCD_CS /* CS */,
@@ -22,16 +36,48 @@ Arduino_GFX *gfx = new Arduino_ST7789(
   LCD_H_RES /* width */, LCD_V_RES /* height */);
 
 
+//Touchscreen config
+TAMC_GT911 tp = TAMC_GT911(TOUCH_SDA, TOUCH_SCL, TOUCH_INT, TOUCH_RST, TOUCH_WIDTH, TOUCH_HEIGHT);
+void TouchonInterrupt(void)
+{
+  tp.isTouched = true;
+}
 //Variables
-char message[] = "Hello World!";
+int messageIndex = 2;
 int textX;      // Tracks the current X position of the text
 int minX;       // Stores the minimum boundaries where text completely goes off-screen
 int scrollSpeed = 2; // Pixels to move per frame (higher = faster)
 
 int textY;
 
+char messagePool[][100] = {{"Hello!"}, {"World!"}, {"Banana!"}};
+//char* messagePtr;
 
 
+
+//Custom methods
+void touch_init()
+{
+  pinMode(TOUCH_RST, OUTPUT);
+  digitalWrite(TOUCH_RST, LOW);
+  delay(500);
+  digitalWrite(TOUCH_RST, HIGH);
+  delay(500);
+  tp.begin();
+  tp.setRotation(ROTATION_NORMAL);
+}
+
+//Change text on tap
+void ChangeMessage()
+{
+
+  if(messageIndex == sizeof(messagePool))
+  {
+    messageIndex = 0;
+    return;
+  }
+    messageIndex++;
+}
 
 void setup(void)
 {
@@ -49,7 +95,6 @@ void setup(void)
     // Start text off-screen right
   textX = 320;
   textY = 85;
-  
 
 #ifdef GFX_EXTRA_PRE_INIT
   GFX_EXTRA_PRE_INIT();
@@ -72,12 +117,29 @@ void setup(void)
   gfx->setTextColor(RED);
   gfx->setTextSize(5);
   gfx->setTextWrap(false);
-  gfx->println(message);
+  gfx->println(messagePool[messageIndex]);
 
 
   // Calculate the pixel boundary to reset text (approx 12 pixels wide per char at size 2)
-  minX = -30 * strlen(message); 
+  minX = -30 * strlen(messagePool[messageIndex]); 
 
+
+
+  //Touch config
+  touch_init();
+   while(1)
+  {
+      tp.read();
+      if (tp.isTouched)
+      {
+          for (int i = 0; i < tp.touches; i++)
+          {
+            ChangeMessage();
+          }
+          tp.isTouched = false;
+      }
+
+  }
 }
 
 void loop()
@@ -89,7 +151,7 @@ void loop()
   gfx->setCursor(textX, textY); // Center vertically on 64px tall screen
 
 
-  gfx->println(message);
+  gfx->println(messagePool[messageIndex]);
   
   // Shift left
   textX -= scrollSpeed; 
@@ -100,5 +162,10 @@ void loop()
   }
   
   delay(10); // Smooth pacing frame rate
+
+ 
 }
+
+
+
 
