@@ -32,6 +32,7 @@ Arduino_GFX *gfx = new Arduino_ST7789(
 
 //Touch variables
 static BBCapTouch touch;
+bool isTouched = false;
 
 //Variables
 int messageIndex = 2;
@@ -41,7 +42,21 @@ int scrollSpeed = 2; // Pixels to move per frame (higher = faster)
 
 int textY;
 
-char messagePool[][100] = {{"Hello!"}, {"World!"}, {"Banana!"}};
+char messagePool[][100] = 
+{
+  {"Hello World!"}, 
+  {":<"}, 
+  {":D"}, 
+  {"(＾v＾)"}, //Does not work
+  {";)"},
+  {"(＃ ` O `)"}, //Does not work
+  {"(o^o)"},
+  {"(O_O)"},
+  {"(＠_＠)"},
+  {"<3"},
+  {"(-_-) zzZ"},
+  {"(X_X)"}
+};
 //char* messagePtr;
 
 
@@ -131,15 +146,18 @@ void loop()
   }
 
 
-  //Touch
+  //Detect Touch
   TOUCHINFO ti;
-   if (touch.getSamples(&ti) && ti.count > 0) 
+   if (touch.getSamples(&ti) && ti.count > 0 && !isTouched) 
    {
     ChangeMessage();
+    isTouched = true;
+   }
+   else {
+    isTouched = false;
    }
   
   delay(10); // Smooth pacing frame rate
-
  
 }
 
