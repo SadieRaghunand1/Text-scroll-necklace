@@ -1,6 +1,7 @@
 #include <Arduino_GFX_Library.h>
 #include <TouchDrv.hpp>
 #include "TAMC_GT911.h"
+#include <bb_captouch.h>
 
 #define LCD_SCLK 39
 #define LCD_MOSI 38
@@ -18,13 +19,7 @@ const int freq = 50000;
 const int channel = 0;
 const int resolution = 8;
 
-//Touch
-#define TOUCH_SDA 17
-#define TOUCH_SCL 18
-#define TOUCH_INT -1
-#define TOUCH_RST 38
-#define TOUCH_WIDTH 800
-#define TOUCH_HEIGHT 480
+
 
 
 Arduino_DataBus *bus = new Arduino_ESP32SPI(
@@ -35,13 +30,9 @@ Arduino_GFX *gfx = new Arduino_ST7789(
   bus, LCD_RST /* RST */, LCD_ROTATION /* rotation */, true /* IPS */,
   LCD_H_RES /* width */, LCD_V_RES /* height */);
 
+//Touch variables
+static BBCapTouch touch;
 
-//Touchscreen config
-TAMC_GT911 tp = TAMC_GT911(TOUCH_SDA, TOUCH_SCL, TOUCH_INT, TOUCH_RST, TOUCH_WIDTH, TOUCH_HEIGHT);
-void TouchonInterrupt(void)
-{
-  tp.isTouched = true;
-}
 //Variables
 int messageIndex = 2;
 int textX;      // Tracks the current X position of the text
@@ -55,23 +46,12 @@ char messagePool[][100] = {{"Hello!"}, {"World!"}, {"Banana!"}};
 
 
 
-//Custom methods
-void touch_init()
-{
-  pinMode(TOUCH_RST, OUTPUT);
-  digitalWrite(TOUCH_RST, LOW);
-  delay(500);
-  digitalWrite(TOUCH_RST, HIGH);
-  delay(500);
-  tp.begin();
-  tp.setRotation(ROTATION_NORMAL);
-}
 
 //Change text on tap
 void ChangeMessage()
 {
-
-  if(messageIndex == sizeof(messagePool))
+  int i = (sizeof(messagePool) / sizeof(messagePool[0])) - 1;
+  if(messageIndex == i)
   {
     messageIndex = 0;
     return;
@@ -79,6 +59,8 @@ void ChangeMessage()
     messageIndex++;
 }
 
+
+//Non-custom functions
 void setup(void)
 {
 
@@ -86,7 +68,6 @@ void setup(void)
 #define BLACK 0x0000
 #define BLUE 0x001F
 #define RED 0xF800
-
 
 
 //Start
@@ -119,27 +100,15 @@ void setup(void)
   gfx->setTextWrap(false);
   gfx->println(messagePool[messageIndex]);
 
+  //Init touch
+  touch.init(48, 47, -1, -1, 400000);
+  touch.setOrientation(0, LCD_H_RES, LCD_V_RES);
+
 
   // Calculate the pixel boundary to reset text (approx 12 pixels wide per char at size 2)
   minX = -30 * strlen(messagePool[messageIndex]); 
 
 
-
-  //Touch config
-  touch_init();
-   while(1)
-  {
-      tp.read();
-      if (tp.isTouched)
-      {
-          for (int i = 0; i < tp.touches; i++)
-          {
-            ChangeMessage();
-          }
-          tp.isTouched = false;
-      }
-
-  }
 }
 
 void loop()
@@ -160,6 +129,14 @@ void loop()
   if(textX < minX) {
     textX = 320; 
   }
+
+
+  //Touch
+  TOUCHINFO ti;
+   if (touch.getSamples(&ti) && ti.count > 0) 
+   {
+    ChangeMessage();
+   }
   
   delay(10); // Smooth pacing frame rate
 
