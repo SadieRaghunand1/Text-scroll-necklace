@@ -15,13 +15,37 @@
 #define LCD_H_RES 240
 #define LCD_V_RES 320
 
+////////////
+#pragma region Colors
+
+#define BLACK 0x0000
+#define BLUE 0x001F
+#define RED 0xF800
+#define WHITE 0xffff
+#define LBLUE 0x7e3f
+#define DBLUE 0x1239
+#define YELLOW 0xffe0
+#define LYELLOW 0xfff2
+#define PINK 0xfc3f
+#define DRED 0x7800
+#define ORANGE 0xfc40
+#define BLUEGRAY 0x8518
+#define GRAY 0x8c71
+#define PURPLE 0x821f
+#define GREEN 0x0fe0
+#define DPURPLE 0x4817
+
+
+#pragma endregion
+//////////////
+
 const int freq = 50000;
 const int channel = 0;
 const int resolution = 8;
 
 
 
-
+//Object definitions
 Arduino_DataBus *bus = new Arduino_ESP32SPI(
   LCD_DC /* DC */, LCD_CS /* CS */,
   LCD_SCLK /* SCK */, LCD_MOSI /* MOSI */, LCD_MISO /* MISO */);
@@ -35,32 +59,47 @@ static BBCapTouch touch;
 bool isTouched = false;
 
 //Variables
-int messageIndex = 2;
+int messageIndex;
 int textX;      // Tracks the current X position of the text
 int minX;       // Stores the minimum boundaries where text completely goes off-screen
 int scrollSpeed = 2; // Pixels to move per frame (higher = faster)
 
 int textY;
 
+//Color collections
 char messagePool[][100] = 
 {
-  {"Hello World!"}, 
-  {":<"}, 
-  {":D"}, 
-  {"(＾v＾)"}, //Does not work
-  {";)"},
-  {"(＃ ` O `)"}, //Does not work
-  {"(o^o)"},
-  {"(O_O)"},
-  {"(＠_＠)"},
-  {"<3"},
-  {"(-_-) zzZ"},
-  {"(X_X)"}
+  {"Hello World!"}, //Text white, black bg
+  {":<"}, //Text light blue, blue bg
+  {":D"}, //Text black, yellow bg
+  {"(＾v＾)"}, //Does not work //Text blue, light yellow bg
+  {";)"}, //Text pink, dark red bg
+  {"(＃ ` O `)"}, //Does not work //Text light orange, red bg
+  {"(o^o)"}, //Text dark blue, light blue/gray bg
+  {"(O_O)"}, //Text grey, bg white
+  {"(＠_＠)"}, //Text purple, green bg
+  {"<3"}, //Text dark red, light pink bg
+  {"(-_-) zzZ"}, //Text white, dark purple bg
+  {"(X_X)"} //Text green, black bg
 };
-//char* messagePtr;
 
-
-
+//Store colors, first index is equal to # of messages, second should be 2 where first element in that row is text color, and second is background color
+//PROBLEM! TEXT IS ALWAYS whatever messageIndex is initialized to!
+uint16_t textBGColors[][2] = 
+{
+  {WHITE, BLACK},
+  {LBLUE, BLUE},
+  {BLACK, YELLOW},
+  {BLUE, LYELLOW},
+  {PINK, DRED},
+  {BLACK, RED},
+  {DBLUE, BLUEGRAY},
+  {GRAY, WHITE},
+  {PURPLE, GREEN},
+  {DRED, PINK},
+  {WHITE, DPURPLE},
+  {GREEN, BLACK}
+};
 
 //Change text on tap
 void ChangeMessage()
@@ -69,20 +108,22 @@ void ChangeMessage()
   if(messageIndex == i)
   {
     messageIndex = 0;
-    return;
   }
+  else
     messageIndex++;
+
+  gfx->setTextColor(textBGColors[messageIndex][0]);
 }
 
 
-//Non-custom functions
+#pragma region Non-custom functions
 void setup(void)
 {
 
 //Defintions
-#define BLACK 0x0000
+/*#define BLACK 0x0000
 #define BLUE 0x001F
-#define RED 0xF800
+#define RED 0xF800*/
 
 
 //Start
@@ -91,6 +132,7 @@ void setup(void)
     // Start text off-screen right
   textX = 320;
   textY = 85;
+  messageIndex = -1;
 
 #ifdef GFX_EXTRA_PRE_INIT
   GFX_EXTRA_PRE_INIT();
@@ -101,7 +143,7 @@ void setup(void)
   {
     Serial.println("gfx->begin() failed!");
   }
-  gfx->fillScreen(BLACK);
+  gfx->fillScreen(textBGColors[messageIndex][1]);
 
 #ifdef LCD_BL
   pinMode(LCD_BL, OUTPUT);
@@ -110,10 +152,10 @@ void setup(void)
 
   //Set initial text appearance
   gfx->setCursor(textX, textY);
-  gfx->setTextColor(RED);
+  gfx->setTextColor(textBGColors[messageIndex][0]);
   gfx->setTextSize(5);
   gfx->setTextWrap(false);
-  gfx->println(messagePool[messageIndex]);
+  //gfx->println(messagePool[messageIndex]);
 
   //Init touch
   touch.init(48, 47, -1, -1, 400000);
@@ -122,14 +164,14 @@ void setup(void)
 
   // Calculate the pixel boundary to reset text (approx 12 pixels wide per char at size 2)
   minX = -30 * strlen(messagePool[messageIndex]); 
-
+  ChangeMessage();
 
 }
 
 void loop()
 {
 
-   gfx->fillScreen(BLACK);
+   gfx->fillScreen(textBGColors[messageIndex][1]);
   
   // Set current cursor coordinate
   gfx->setCursor(textX, textY); // Center vertically on 64px tall screen
@@ -160,6 +202,7 @@ void loop()
   delay(10); // Smooth pacing frame rate
  
 }
+#pragma endregion 
 
 
 
