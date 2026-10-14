@@ -1,3 +1,4 @@
+#include <U8g2lib.h>
 #include <Arduino_GFX_Library.h>
 #include <TouchDrv.hpp>
 #include "TAMC_GT911.h"
@@ -34,6 +35,7 @@
 #define PURPLE 0x821f
 #define GREEN 0x0fe0
 #define DPURPLE 0x4817
+#define DGREEN 0x0382
 
 
 #pragma endregion
@@ -73,14 +75,15 @@ char messagePool[][100] =
   {":<"}, //Text light blue, blue bg
   {":D"}, //Text black, yellow bg
   {"(＾v＾)"}, //Does not work //Text blue, light yellow bg
-  {";)"}, //Text pink, dark red bg
-  {"(＃ ` O `)"}, //Does not work //Text light orange, red bg
+  {"(♥ω♥*)"}, //Text pink, dark red bg
+  {"(ノಠдಠ)ノ彡┻━ ┻"}, //Does not work //Text light orange, red bg
   {"(o^o)"}, //Text dark blue, light blue/gray bg
   {"(O_O)"}, //Text grey, bg white
-  {"(＠_＠)"}, //Text purple, green bg
-  {"<3"}, //Text dark red, light pink bg
+  {"(⊙_☉)"}, //Text purple, green bg
+  {"(ﾉ◕ヮ◕)ﾉ*:･ ﾟ✧"}, //Text dark red, light pink bg
   {"(-_-) zzZ"}, //Text white, dark purple bg
-  {"(X_X)"} //Text green, black bg
+  {"(X_X)"}, //Text green, black bg
+  {"($ ∀ $)"} //Text green, darkgreen BG
 };
 
 //Store colors, first index is equal to # of messages, second should be 2 where first element in that row is text color, and second is background color
@@ -98,7 +101,8 @@ uint16_t textBGColors[][2] =
   {PURPLE, GREEN},
   {DRED, PINK},
   {WHITE, DPURPLE},
-  {GREEN, BLACK}
+  {GREEN, BLACK},
+  {GREEN, DGREEN}
 };
 
 //Change text on tap
@@ -120,18 +124,13 @@ void ChangeMessage()
 void setup(void)
 {
 
-//Defintions
-/*#define BLACK 0x0000
-#define BLUE 0x001F
-#define RED 0xF800*/
-
 
 //Start
   Serial.begin(115200);
 
     // Start text off-screen right
   textX = 320;
-  textY = 85;
+  textY = 120;
   messageIndex = -1;
 
 #ifdef GFX_EXTRA_PRE_INIT
@@ -151,9 +150,11 @@ void setup(void)
 #endif
 
   //Set initial text appearance
+  gfx->setUTF8Print(true);
+  gfx->setFont(u8g2_font_boutique_bitmap_7x7_t_all);
   gfx->setCursor(textX, textY);
   gfx->setTextColor(textBGColors[messageIndex][0]);
-  gfx->setTextSize(5);
+  gfx->setTextSize(7);
   gfx->setTextWrap(false);
   //gfx->println(messagePool[messageIndex]);
 
@@ -163,7 +164,7 @@ void setup(void)
 
 
   // Calculate the pixel boundary to reset text (approx 12 pixels wide per char at size 2)
-  minX = -30 * strlen(messagePool[messageIndex]); 
+  minX = -10 * strlen(messagePool[messageIndex]); 
   ChangeMessage();
 
 }
