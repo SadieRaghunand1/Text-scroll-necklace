@@ -1,1 +1,1 @@
-C:\Users\sadie\source\repos\NecklaceContollerApp\NecklaceContollerApp.csproj;x64
+D:\Github\Text-scroll-necklace\NecklaceContollerApp\NecklaceContollerApp.csproj;x64

@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\colortextpicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:colortextpicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\views\\colortextpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:views\\colortextpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\views\\colortextpicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:views\\colortextpicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\models\\colorpickerfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:models\\colorpickerfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -18,24 +30,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ColorTextPicker.xaml",
-              "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\ColorTextPicker.xaml",
-              "RelativeDocumentMoniker": "ColorTextPicker.xaml",
-              "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\ColorTextPicker.xaml",
-              "RelativeToolTip": "ColorTextPicker.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "ColorPickerFunc.cs",
+              "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Models\\ColorPickerFunc.cs",
+              "RelativeDocumentMoniker": "Models\\ColorPickerFunc.cs",
+              "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Models\\ColorPickerFunc.cs",
+              "RelativeToolTip": "Models\\ColorPickerFunc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T19:26:49.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\AppShell.xaml",
+              "RelativeDocumentMoniker": "AppShell.xaml",
+              "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\AppShell.xaml",
+              "RelativeToolTip": "AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-18T19:07:42.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-18T19:21:33.385Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ColorTextPicker.xaml",
+              "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\ColorTextPicker.xaml",
+              "RelativeDocumentMoniker": "Views\\ColorTextPicker.xaml",
+              "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\ColorTextPicker.xaml",
+              "RelativeToolTip": "Views\\ColorTextPicker.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-18T19:20:13.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColorTextPicker.xaml.cs",
+              "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\ColorTextPicker.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\ColorTextPicker.xaml.cs",
+              "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\ColorTextPicker.xaml.cs",
+              "RelativeToolTip": "Views\\ColorTextPicker.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-18T19:19:56.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MauiProgram.cs",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\MauiProgram.cs",
               "RelativeDocumentMoniker": "MauiProgram.cs",
