@@ -1,0 +1,1 @@
+C:\Users\sadie\source\repos\NecklaceContollerApp\NecklaceContollerApp.csproj;x64
