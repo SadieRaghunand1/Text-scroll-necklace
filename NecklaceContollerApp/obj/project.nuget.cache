@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A2x//3jtcpo=",
+  "dgSpecHash": "pVDnbAu8mEk=",
   "success": false,
   "projectFilePath": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\NecklaceContollerApp.csproj",
   "expectedPackageFiles": [],
@@ -8,7 +8,10 @@
     {
       "code": "NU1012",
       "level": "Error",
-      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net9.0-android, net9.0-ios, net9.0-maccatalyst"
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net10.0-android",
+      "projectPath": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\NecklaceContollerApp.csproj",
+      "filePath": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\NecklaceContollerApp.csproj",
+      "targetGraphs": []
     }
   ]
 }

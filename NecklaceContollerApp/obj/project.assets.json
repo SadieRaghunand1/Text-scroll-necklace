@@ -1,17 +1,25 @@
 {
   "version": 3,
   "targets": {
-    "net9.0-android": {},
-    "net9.0-ios": {},
-    "net9.0-maccatalyst": {},
-    "net9.0-windows10.0.19041": {}
+    "net10.0-android": {},
+    "net10.0-android/iossimulator-x64": {},
+    "net10.0-android/maccatalyst-x64": {},
+    "net10.0-ios26.5": {},
+    "net10.0-ios26.5/iossimulator-x64": {},
+    "net10.0-ios26.5/maccatalyst-x64": {},
+    "net10.0-maccatalyst26.5": {},
+    "net10.0-maccatalyst26.5/iossimulator-x64": {},
+    "net10.0-maccatalyst26.5/maccatalyst-x64": {},
+    "net10.0-windows10.0.19041": {},
+    "net10.0-windows10.0.19041/iossimulator-x64": {},
+    "net10.0-windows10.0.19041/maccatalyst-x64": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0-android": [],
-    "net9.0-ios": [],
-    "net9.0-maccatalyst": [],
-    "net9.0-windows10.0.19041": []
+    "net10.0-android": [],
+    "net10.0-ios26.5": [],
+    "net10.0-maccatalyst26.5": [],
+    "net10.0-windows10.0.19041": []
   },
   "packageFolders": {
     "C:\\Users\\sadie\\.nuget\\packages\\": {},
@@ -36,10 +44,10 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net9.0-android",
-        "net9.0-ios",
-        "net9.0-maccatalyst",
-        "net9.0-windows10.0.19041.0"
+        "net10.0-android",
+        "net10.0-ios",
+        "net10.0-maccatalyst",
+        "net10.0-windows10.0.19041.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -47,20 +55,20 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0-android": {
-          "targetAlias": "net9.0-android",
+        "net10.0-android": {
+          "targetAlias": "net10.0-android",
           "projectReferences": {}
         },
-        "net9.0-ios": {
-          "targetAlias": "net9.0-ios",
+        "net10.0-ios26.5": {
+          "targetAlias": "net10.0-ios",
           "projectReferences": {}
         },
-        "net9.0-maccatalyst": {
-          "targetAlias": "net9.0-maccatalyst",
+        "net10.0-maccatalyst26.5": {
+          "targetAlias": "net10.0-maccatalyst",
           "projectReferences": {}
         },
-        "net9.0-windows10.0.19041": {
-          "targetAlias": "net9.0-windows10.0.19041.0",
+        "net10.0-windows10.0.19041": {
+          "targetAlias": "net10.0-windows10.0.19041.0",
           "projectReferences": {}
         }
       },
@@ -72,12 +80,13 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
-      "net9.0-android": {
-        "targetAlias": "net9.0-android",
+      "net10.0-android": {
+        "targetAlias": "net10.0-android",
         "imports": [
           "net461",
           "net462",
@@ -89,10 +98,10 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
       },
-      "net9.0-ios": {
-        "targetAlias": "net9.0-ios",
+      "net10.0-ios26.5": {
+        "targetAlias": "net10.0-ios",
         "imports": [
           "net461",
           "net462",
@@ -104,11 +113,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
       },
-      "net9.0-maccatalyst": {
-        "targetAlias": "net9.0-maccatalyst",
+      "net10.0-maccatalyst26.5": {
+        "targetAlias": "net10.0-maccatalyst",
         "imports": [
+          "xamarinios10",
           "net461",
           "net462",
           "net47",
@@ -119,10 +129,10 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
       },
-      "net9.0-windows10.0.19041": {
-        "targetAlias": "net9.0-windows10.0.19041.0",
+      "net10.0-windows10.0.19041": {
+        "targetAlias": "net10.0-windows10.0.19041.0",
         "imports": [
           "net461",
           "net462",
@@ -134,7 +144,15 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.319/PortableRuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "iossimulator-x64": {
+        "#import": []
+      },
+      "maccatalyst-x64": {
+        "#import": []
       }
     }
   },
@@ -142,7 +160,7 @@
     {
       "code": "NU1012",
       "level": "Error",
-      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net9.0-android, net9.0-ios, net9.0-maccatalyst"
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net10.0-android"
     }
   ]
 }
