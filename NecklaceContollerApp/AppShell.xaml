@@ -4,12 +4,27 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:NecklaceContollerApp.Views"
+    xmlns:models="clr-namespace:NecklaceContollerApp.Models"
     Shell.FlyoutBehavior="Disabled"
     Title="NecklaceContollerApp">
 
-    <ShellContent
-        Title="ColorTextPicker"
-        ContentTemplate="{DataTemplate views:ColorTextPicker}"
-        />
+    <ShellContent>
+        <ShellContent.BindingContext>
+            <models:ColorPickerFunc />
+        </ShellContent.BindingContext>
+        <ContentPage>
+            <VerticalStackLayout>
+                <Label 
+        x:Name="TitleText"
+        Text="This is the color picker page"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+                <Button 
+        x:Name="PickedColor"
+        Clicked="OnColorPicked"
+      />
+            </VerticalStackLayout>
+        </ContentPage>
+    </ShellContent>
 
 </Shell>

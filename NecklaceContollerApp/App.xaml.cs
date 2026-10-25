@@ -1,4 +1,6 @@
-﻿namespace NecklaceContollerApp
+﻿using NecklaceContollerApp.Views;
+
+namespace NecklaceContollerApp
 {
     public partial class App : Application
     {
@@ -7,6 +9,7 @@
             InitializeComponent();
 
             MainPage = new AppShell();
+           // MainPage = new ColorTextPicker();
         }
     }
 }

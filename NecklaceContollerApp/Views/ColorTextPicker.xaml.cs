@@ -9,7 +9,7 @@ public partial class ColorTextPicker : ContentPage
 	
 	private void OnColorPicked(object sender, EventArgs args)
 	{
-		TitleText.Text = "AAAAAAAA";
+		//TitleText.Text = "AAAAAAAA";
 		count++;
 	}
 }
