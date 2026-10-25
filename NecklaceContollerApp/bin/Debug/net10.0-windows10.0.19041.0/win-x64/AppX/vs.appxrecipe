@@ -28,7 +28,7 @@
     <AppXManifest Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-10-25T22:40:05.617</Modified>
+      <Modified>2026-10-25T23:19:54.190</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -38,7 +38,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>NecklaceContollerApp.exe</PackagePath>
-      <Modified>2026-10-25T22:40:04.494</Modified>
+      <Modified>2026-10-25T23:19:52.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -278,7 +278,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\NecklaceContollerApp.dll">
       <PackagePath>NecklaceContollerApp.dll</PackagePath>
-      <Modified>2026-10-25T22:40:04.490</Modified>
+      <Modified>2026-10-25T23:19:52.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sadie\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>

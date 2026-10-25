@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage
-             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             >
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:NecklaceContollerApp.Views"
+    xmlns:models="clr-namespace:NecklaceContollerApp.Models"
+    Title="ChooseTextPage"
+>
+
+    <VerticalStackLayout>
+        <Label
+            x:Name="Instructions"
+            Text="Type the text for your keychain, then press 'Change'!"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center"
+            LineBreakMode="WordWrap"
+            FontSize="16"
+            TextColor="Black" 
+            Padding="10"/>
+        <Entry x:Name="entry"
+            Placeholder="Enter text :)"
+             />
+    </VerticalStackLayout>
+
 
 </ContentPage>

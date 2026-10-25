@@ -7,6 +7,7 @@
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute(nameof(Views.ColorTextPicker), typeof(Views.ColorTextPicker));
         }
 
         private void OnColorPicked(object sender, EventArgs args)
@@ -14,8 +15,13 @@
             //TitleText.Text = "AAAAAAAA";
             count++;
             textToShow = count.ToString();
-            PickedColor.Text = textToShow;
+            ChangeColor.Text = textToShow;
             
+        }
+
+        private async void OnTextPicked(object sender, EventArgs args)
+        {
+            await Shell.Current.GoToAsync(nameof(Views.ColorTextPicker));
         }
 
         public string GetCount()

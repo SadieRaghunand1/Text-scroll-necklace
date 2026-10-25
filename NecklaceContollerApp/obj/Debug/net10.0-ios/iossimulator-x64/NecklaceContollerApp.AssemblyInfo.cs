@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NecklaceContollerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+aa5b3c5f56aeeeb3c57271554bf6abd560d64b71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+fa56d0edc9d14c4e2954aa6d2260dcefb89df8ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("NecklaceContollerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NecklaceContollerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

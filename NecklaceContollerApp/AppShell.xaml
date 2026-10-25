@@ -15,14 +15,20 @@
         <ContentPage>
             <VerticalStackLayout>
                 <Label 
-        x:Name="TitleText"
-        Text="This is the color picker page"
-        VerticalOptions="Center" 
-        HorizontalOptions="Center" />
+                    x:Name="TitleText"
+                    Text="This is the color picker page"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" />
                 <Button 
-        x:Name="PickedColor"
-        Clicked="OnColorPicked"
-      />
+                    x:Name="ChangeColor"
+                    Text="Change background color"
+                    Clicked="OnColorPicked"
+                />
+                <Button 
+                    x:Name="ChangeText"
+                    Text="Change text"
+                    Clicked="OnTextPicked"
+                />
             </VerticalStackLayout>
         </ContentPage>
     </ShellContent>
