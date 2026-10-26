@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage
+    x:Class="NecklaceContollerApp.Views.ColorTextPicker"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:views="clr-namespace:NecklaceContollerApp.Views"
     xmlns:models="clr-namespace:NecklaceContollerApp.Models"
     Title="ChooseTextPage"
+    BackgroundColor="LightPink"
 >
 
     <VerticalStackLayout>
@@ -19,6 +21,7 @@
             Padding="10"/>
         <Entry x:Name="entry"
             Placeholder="Enter text :)"
+               Completed="OnKeychainTextChanged"
              />
     </VerticalStackLayout>
 

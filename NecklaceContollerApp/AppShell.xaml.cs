@@ -7,7 +7,7 @@
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(Views.ColorTextPicker), typeof(Views.ColorTextPicker));
+            Routing.RegisterRoute("ChooseTextPg", typeof(Views.ColorTextPicker));
         }
 
         private void OnColorPicked(object sender, EventArgs args)
@@ -21,7 +21,7 @@
 
         private async void OnTextPicked(object sender, EventArgs args)
         {
-            await Shell.Current.GoToAsync(nameof(Views.ColorTextPicker));
+            await Shell.Current.GoToAsync("ChooseTextPg");
         }
 
         public string GetCount()
