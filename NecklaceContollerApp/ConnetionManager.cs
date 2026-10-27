@@ -7,13 +7,19 @@ namespace NecklaceContollerApp
 {
     class ConnetionManager
     {
-        private Color chosenColor = new Color();
+        private Color chosenBGColor = new Color();
+        private Color chosenTextColor = new Color();
         private string displayedString = string.Empty;
 
 
-        public void SetColor(Color _color)
+        public void SetBGColor(Color _color)
         {
-            chosenColor = _color;
+            chosenBGColor = _color;
+        }
+
+        public void SetTextColor(Color _color)
+        {
+            chosenTextColor = _color;
         }
 
         public void SetText(string _text)

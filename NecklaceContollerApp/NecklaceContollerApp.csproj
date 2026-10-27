@@ -66,6 +66,17 @@
 	  <MauiXaml Update="Views\ColorTextPicker.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\JustColorPicker.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-android'">
+	  <PackageReference Include="Docutain.ColorPicker.MAUI" Version="2.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net10.0-ios'">
+	  <PackageReference Include="Docutain.ColorPicker.MAUI" Version="2.0.0" />
 	</ItemGroup>
 
 </Project>

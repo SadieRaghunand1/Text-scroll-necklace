@@ -2,6 +2,19 @@
   "version": 4,
   "targets": {
     "net10.0-android": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -2506,6 +2519,19 @@
       }
     },
     "net10.0-android/android-arm64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -5010,6 +5036,19 @@
       }
     },
     "net10.0-android/android-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -7514,6 +7553,19 @@
       }
     },
     "net10.0-android/iossimulator-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -10018,6 +10070,19 @@
       }
     },
     "net10.0-android/maccatalyst-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -12522,6 +12587,19 @@
       }
     },
     "net10.0-android/win-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-android36.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "GoogleGson/2.13.1.1": {
         "type": "package",
         "dependencies": {
@@ -15026,6 +15104,19 @@
       }
     },
     "net10.0-ios": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -15510,6 +15601,19 @@
       }
     },
     "net10.0-ios/android-arm64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -15994,6 +16098,19 @@
       }
     },
     "net10.0-ios/android-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -16478,6 +16595,19 @@
       }
     },
     "net10.0-ios/iossimulator-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -16962,6 +17092,19 @@
       }
     },
     "net10.0-ios/maccatalyst-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -17446,6 +17589,19 @@
       }
     },
     "net10.0-ios/win-x64": {
+      "Docutain.ColorPicker.MAUI/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0-ios26.0/DocutainColorPicker.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration/10.0.0": {
         "type": "package",
         "dependencies": {
@@ -25905,6 +26061,24 @@
     }
   },
   "libraries": {
+    "Docutain.ColorPicker.MAUI/2.0.0": {
+      "sha512": "P6+cabioproY0rzpu+k+awDshA9Vh8aDSdt0qeGa5H189QHXJo1HqCY+LPzJFXyWJvuilLlgjrLTU6EiiBV2Rw==",
+      "type": "package",
+      "path": "docutain.colorpicker.maui/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "DocutainColorPickerLogo.png",
+        "docutain.colorpicker.maui.2.0.0.nupkg.sha512",
+        "docutain.colorpicker.maui.nuspec",
+        "lib/net10.0-android36.0/DocutainColorPicker.dll",
+        "lib/net10.0-android36.0/DocutainColorPicker.xml",
+        "lib/net10.0-ios26.0/DocutainColorPicker.dll",
+        "lib/net10.0-ios26.0/DocutainColorPicker.xml",
+        "license.txt",
+        "readme.md"
+      ]
+    },
     "GoogleGson/2.13.1.1": {
       "sha512": "1yD5W1UPmgEEHrqdtVJI7330h1foGWiehVC07er3NiZxJPMmphTmPz2kuSXawIo8xmeIvd92WpiTOEmYpk6mzQ==",
       "type": "package",
@@ -31493,12 +31667,14 @@
   },
   "projectFileDependencyGroups": {
     "net10.0-android": [
+      "Docutain.ColorPicker.MAUI >= 2.0.0",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.110",
       "Microsoft.Maui.Controls.Compatibility >= 10.0.110",
       "Microsoft.NET.ILLink.Tasks >= 10.0.14"
     ],
     "net10.0-ios": [
+      "Docutain.ColorPicker.MAUI >= 2.0.0",
       "Microsoft.Extensions.Logging.Debug >= 10.0.0",
       "Microsoft.Maui.Controls >= 10.0.110",
       "Microsoft.Maui.Controls.Compatibility >= 10.0.110",
@@ -31588,6 +31764,10 @@
         "framework": "net10.0-android36.0",
         "targetAlias": "net10.0-android",
         "dependencies": {
+          "Docutain.ColorPicker.MAUI": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[10.0.0, )"
@@ -31909,6 +32089,10 @@
         "framework": "net10.0-ios27.1",
         "targetAlias": "net10.0-ios",
         "dependencies": {
+          "Docutain.ColorPicker.MAUI": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "[10.0.0, )"
