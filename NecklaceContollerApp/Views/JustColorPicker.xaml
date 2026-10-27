@@ -3,7 +3,6 @@
     x:Class="NecklaceContollerApp.Views.JustColorPicker"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:docutain="clr-namespace:Docutain.ColorPicker.MAUI;assembly=Docutain.ColorPicker.MAUI"
     xmlns:views="clr-namespace:NecklaceContollerApp.Views"
     xmlns:models="clr-namespace:NecklaceContollerApp.Models"
     Title="ChooseColorPage"
@@ -20,7 +19,41 @@
             FontSize="16"
             TextColor="Black" 
             Padding="10"/>
-        
+        <ScrollView>
+            <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
+
+                <Label Text="Background color picker" 
+                   FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <!-- Color Preview Box -->
+                <Border StrokeShape="RoundRectangle 12" StrokeThickness="2" WidthRequest="200" HeightRequest="200">
+                    <BoxView x:Name="BGColorPreview" Color="Black" />
+                </Border>
+
+                <!-- Hex Value Display -->
+                <Label x:Name="BGHexLabel" Text="#000000" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <!-- Red Slider -->
+                <VerticalStackLayout>
+                    <Label Text="Red" TextColor="Red" FontAttributes="Bold" />
+                    <Slider x:Name="BGRedSlider" Minimum="0" Maximum="255" ValueChanged="OnBGColorChanged" MinimumTrackColor="Red"/>
+                </VerticalStackLayout>
+
+                <!-- Green Slider -->
+                <VerticalStackLayout>
+                    <Label Text="Green" TextColor="Green" FontAttributes="Bold" />
+                    <Slider x:Name="BGGreenSlider" Minimum="0" Maximum="255" ValueChanged="OnBGColorChanged" MinimumTrackColor="Green"/>
+                </VerticalStackLayout>
+
+                <!-- Blue Slider -->
+                <VerticalStackLayout>
+                    <Label Text="Blue" TextColor="Blue" FontAttributes="Bold" />
+                    <Slider x:Name="BGBlueSlider" Minimum="0" Maximum="255" ValueChanged="OnBGColorChanged" MinimumTrackColor="Blue"/>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
         <Label
      x:Name="InstructionsTextColor"
      Text="Pick the text color for you keychain!"
@@ -30,7 +63,41 @@
      FontSize="16"
      TextColor="Black" 
      Padding="10"/>
-        
+        <ScrollView>
+            <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
+
+                <Label Text="Text color picker" 
+                   FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <!-- Color Preview Box -->
+                <Border StrokeShape="RoundRectangle 12" StrokeThickness="2" WidthRequest="200" HeightRequest="200">
+                    <BoxView x:Name="ColorPreview" Color="Black" />
+                </Border>
+
+                <!-- Hex Value Display -->
+                <Label x:Name="HexLabel" Text="#000000" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <!-- Red Slider -->
+                <VerticalStackLayout>
+                    <Label Text="Red" TextColor="Red" FontAttributes="Bold" />
+                    <Slider x:Name="RedSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Red"/>
+                </VerticalStackLayout>
+
+                <!-- Green Slider -->
+                <VerticalStackLayout>
+                    <Label Text="Green" TextColor="Green" FontAttributes="Bold" />
+                    <Slider x:Name="GreenSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Green"/>
+                </VerticalStackLayout>
+
+                <!-- Blue Slider -->
+                <VerticalStackLayout>
+                    <Label Text="Blue" TextColor="Blue" FontAttributes="Bold" />
+                    <Slider x:Name="BlueSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Blue"/>
+                </VerticalStackLayout>
+
+            </VerticalStackLayout>
+        </ScrollView>
+
     </VerticalStackLayout>
 
 

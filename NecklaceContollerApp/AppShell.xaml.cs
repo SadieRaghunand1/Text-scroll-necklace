@@ -12,7 +12,7 @@
 
         private async void OnColorPicked(object sender, EventArgs args)
         {
-            await Shell.Current.GoToAsync("ChooseColorPg");
+            await Shell.Current.GoToAsync("ChooseColorPg"); //Crashed :(
 
         }
 

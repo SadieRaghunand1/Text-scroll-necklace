@@ -1,3 +1,4 @@
+DocutainColorPicker.dll
 GoogleGson.dll
 Jsr305Binding.dll
 Microsoft.Maui.Controls.Compatibility.dll
@@ -182,4 +183,3 @@ Xamarin.KotlinX.Coroutines.Core.aar
 Xamarin.KotlinX.Coroutines.Core.Jvm.aar
 Xamarin.KotlinX.Serialization.Core.aar
 Xamarin.KotlinX.Serialization.Core.Jvm.aar
-DocutainColorPicker.dll

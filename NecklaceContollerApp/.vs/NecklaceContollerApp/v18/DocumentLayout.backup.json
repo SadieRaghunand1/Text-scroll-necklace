@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\views\\justcolorpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:views\\justcolorpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\views\\justcolorpicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:views\\justcolorpicker.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\views\\justcolorpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:views\\justcolorpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\views\\colortextpicker.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|d:\\github\\text-scroll-necklace\\necklacecontollerapp\\models\\colorpickerfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEDA3176-B0EC-4874-AEA9-A2477EDC4D24}|NecklaceContollerApp.csproj|solutionrelative:models\\colorpickerfunc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -54,51 +54,50 @@
               "RelativeToolTip": "Models\\ColorPickerFunc.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-27T21:01:29.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-27T21:01:29.945Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "JustColorPicker.xaml.cs",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\JustColorPicker.xaml.cs",
               "RelativeDocumentMoniker": "Views\\JustColorPicker.xaml.cs",
               "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\JustColorPicker.xaml.cs",
               "RelativeToolTip": "Views\\JustColorPicker.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA1wB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-27T20:52:56.996Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "JustColorPicker.xaml",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\JustColorPicker.xaml",
               "RelativeDocumentMoniker": "Views\\JustColorPicker.xaml",
               "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\JustColorPicker.xaml",
               "RelativeToolTip": "Views\\JustColorPicker.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAF4AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-10-27T20:50:55.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "AppShell.xaml.cs",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\AppShell.xaml.cs",
               "RelativeDocumentMoniker": "AppShell.xaml.cs",
               "ToolTip": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\AppShell.xaml.cs",
               "RelativeToolTip": "AppShell.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-25T22:29:39.558Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ColorTextPicker.xaml",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\ColorTextPicker.xaml",
               "RelativeDocumentMoniker": "Views\\ColorTextPicker.xaml",
@@ -106,12 +105,11 @@
               "RelativeToolTip": "Views\\ColorTextPicker.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-25T22:18:35.796Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:18:35.796Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "AppShell.xaml",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\AppShell.xaml",
               "RelativeDocumentMoniker": "AppShell.xaml",
@@ -119,12 +117,11 @@
               "RelativeToolTip": "AppShell.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-10-25T22:18:22.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:18:22.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ConnetionManager.cs",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\ConnetionManager.cs",
               "RelativeDocumentMoniker": "ConnetionManager.cs",
@@ -132,12 +129,11 @@
               "RelativeToolTip": "ConnetionManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-26T22:09:47.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-26T22:09:47.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ColorTextPicker.xaml.cs",
               "DocumentMoniker": "D:\\Github\\Text-scroll-necklace\\NecklaceContollerApp\\Views\\ColorTextPicker.xaml.cs",
               "RelativeDocumentMoniker": "Views\\ColorTextPicker.xaml.cs",
@@ -145,8 +141,7 @@
               "RelativeToolTip": "Views\\ColorTextPicker.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-25T22:22:13.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-25T22:22:13.035Z"
             }
           ]
         }

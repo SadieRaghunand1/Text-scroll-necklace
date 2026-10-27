@@ -1,11 +1,20 @@
-using Docutain;
-using DocutainColorPicker;
+using System.Drawing;
 
 namespace NecklaceContollerApp.Views;
 
 public partial class JustColorPicker : ContentPage
-{
+{ 
+
+    public struct ColorVals
+    {
+        public byte[] rgb;
+
+        public Microsoft.Maui.Graphics.Color currentColor;
+    }
+
     NecklaceContollerApp.ConnetionManager _conn;
+    private ColorVals bg;
+    private ColorVals txt;
 
 
     public JustColorPicker()
@@ -14,54 +23,36 @@ public partial class JustColorPicker : ContentPage
         _conn = new ConnetionManager();
 	}
    
-    private void OnBGColorChanged(object sender, EventArgs e)
+    private void OnBGColorChanged(object sender, ValueChangedEventArgs e)
     {
-        if (sender is Entry entry) { }
-            //_conn.SetBGColor();
-    }
-
-    private void OnTextColorChanged(object sender, EventArgs e)
-    {
-        if (sender is Entry entry) { }
-        //_conn.SetTextColor();
-    }
-
-# region Handle color picker behavior
-    public async void HandleColorPicker()
-    {
-        var previousColor = BackgroundColor;
-
-        // Define your custom config; all values are optional.
-        var colorConfig = new ColorPickerConfig
+        if (sender is Slider _slider)
         {
-            Title = "Pick a color",
-            DefaultColor = Colors.Yellow,
-            PositiveButton = "OK",
-            NegativeButton = "Cancel",
-            SupportsAlpha = true,
-            ShowDefaultColors = true,
-            Dismissable = true,
-            OnColorChanged = color => BackgroundColor = color,
-            RecentColorsLabel = "Recent",
-            DefaultColorsLabel = "Colors",
-            CustomColorLabel = "Custom color"
-        };
-
-        // Open the picker and wait for the result.
-        var color = await ColorPicker.PickColor(colorConfig);
-
-        if (color != null)
-        {
-            BackgroundColor = color;
+            
+            BGColorPreview.Color = CalculateColor(bg, BGRedSlider.Value, BGGreenSlider.Value, BGBlueSlider.Value);
         }
-        else
+            
+    }
+
+    private void OnTextColorChanged(object sender, ValueChangedEventArgs e)
+    {
+        if (sender is Slider _slider)
         {
-            // Restore the previous color after canceling a live preview.
-            BackgroundColor = previousColor;
+
+            ColorPreview.Color = CalculateColor(txt, RedSlider.Value, GreenSlider.Value, BlueSlider.Value);
         }
     }
 
-   
-    #endregion
+
+    private Microsoft.Maui.Graphics.Color CalculateColor(ColorVals _obj, double _r, double _g, double _b)
+    {
+        _obj.rgb[0] = (byte)Math.Clamp(Math.Round(_r), 0, 255);
+        _obj.rgb[1] = (byte)Math.Clamp(Math.Round(_g), 0, 255);
+        _obj.rgb[2] = (byte)Math.Clamp(Math.Round(_b), 0, 255);
+
+
+        _obj.currentColor = Microsoft.Maui.Graphics.Color.FromArgb(Convert.ToHexString(_obj.rgb));
+        _conn.SetTextColor(_obj.currentColor);
+        return _obj.currentColor;
+    }
 }
     

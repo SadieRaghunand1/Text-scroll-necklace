@@ -28,17 +28,17 @@
     <AppXManifest Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-10-26T22:08:43.413</Modified>
+      <Modified>2026-10-27T21:53:25.061</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\NecklaceContollerApp.runtimeconfig.json">
       <PackagePath>NecklaceContollerApp.runtimeconfig.json</PackagePath>
-      <Modified>2026-10-25T22:27:56.114</Modified>
+      <Modified>2026-10-27T21:10:37.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>NecklaceContollerApp.exe</PackagePath>
-      <Modified>2026-10-26T22:08:42.036</Modified>
+      <Modified>2026-10-27T21:53:23.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -46,23 +46,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:02.913</Modified>
+      <Modified>2026-10-27T21:05:43.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
       <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:02.920</Modified>
+      <Modified>2026-10-27T21:05:43.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
       <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:02.931</Modified>
+      <Modified>2026-10-27T21:05:43.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
       <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:02.947</Modified>
+      <Modified>2026-10-27T21:05:43.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.003</Modified>
+      <Modified>2026-10-27T21:05:43.941</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
@@ -74,211 +74,211 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appicon.ico">
       <PackagePath>appicon.ico</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLargeTile.scale-100.png">
       <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLargeTile.scale-125.png">
       <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLargeTile.scale-150.png">
       <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLargeTile.scale-200.png">
       <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLargeTile.scale-400.png">
       <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
       <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.scale-100.png">
       <PackagePath>appiconLogo.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.scale-125.png">
       <PackagePath>appiconLogo.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.scale-150.png">
       <PackagePath>appiconLogo.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.scale-200.png">
       <PackagePath>appiconLogo.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.scale-400.png">
       <PackagePath>appiconLogo.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.321</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.targetsize-16.png">
       <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.targetsize-24.png">
       <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.targetsize-256.png">
       <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.targetsize-32.png">
       <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconLogo.targetsize-48.png">
       <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconMediumTile.scale-100.png">
       <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconMediumTile.scale-125.png">
       <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconMediumTile.scale-150.png">
       <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconMediumTile.scale-200.png">
       <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconMediumTile.scale-400.png">
       <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconSmallTile.scale-100.png">
       <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconSmallTile.scale-125.png">
       <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconSmallTile.scale-150.png">
       <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconSmallTile.scale-200.png">
       <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconSmallTile.scale-400.png">
       <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
       <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
       <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
       <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.270</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
       <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
       <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.318</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconWideTile.scale-100.png">
       <PackagePath>appiconWideTile.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconWideTile.scale-125.png">
       <PackagePath>appiconWideTile.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconWideTile.scale-150.png">
       <PackagePath>appiconWideTile.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconWideTile.scale-200.png">
       <PackagePath>appiconWideTile.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.317</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.269</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.268</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.268</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.268</Modified>
+      <Modified>2026-10-27T21:05:44.316</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2026-10-25T22:18:03.268</Modified>
+      <Modified>2026-10-27T21:05:44.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\obj\Debug\net10.0-windows10.0.19041.0\win-x64\NecklaceContollerApp.dll">
       <PackagePath>NecklaceContollerApp.dll</PackagePath>
-      <Modified>2026-10-26T22:08:42.034</Modified>
+      <Modified>2026-10-27T21:53:23.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sadie\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.57\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -658,7 +658,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\NecklaceContollerApp.deps.json">
       <PackagePath>NecklaceContollerApp.deps.json</PackagePath>
-      <Modified>2026-10-25T22:27:56.102</Modified>
+      <Modified>2026-10-27T21:10:37.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\sadie\.nuget\packages\microsoft.maui.controls.compatibility\10.0.110\lib\net10.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -698,7 +698,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\Github\Text-scroll-necklace\NecklaceContollerApp\bin\Debug\net10.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-10-25T22:27:56.229</Modified>
+      <Modified>2026-10-27T21:10:37.663</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
