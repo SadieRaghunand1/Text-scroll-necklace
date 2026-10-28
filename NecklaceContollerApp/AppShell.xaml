@@ -29,6 +29,9 @@
                     Text="Change text"
                     Clicked="OnTextPicked"
                 />
+                <Label x:Name="CurrentText" FontSize="48" TextColor="Black"/>
+                <Label x:Name="CurrentBG" FontSize="48" TextColor="Black"/>
+                <Label x:Name="CurrentTextColor" FontSize="48" TextColor="Black"/>
             </VerticalStackLayout>
         </ContentPage>
     </ShellContent>

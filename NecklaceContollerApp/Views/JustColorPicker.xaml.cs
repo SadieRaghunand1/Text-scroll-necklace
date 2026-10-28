@@ -7,6 +7,7 @@ public partial class JustColorPicker : ContentPage
 
     public struct ColorVals
     {
+        public bool isBG;
         public byte[] rgb;
 
         public Microsoft.Maui.Graphics.Color currentColor;
@@ -21,7 +22,23 @@ public partial class JustColorPicker : ContentPage
 	{
 		InitializeComponent();
         _conn = new ConnetionManager();
+        InitVals();
 	}
+
+    private void InitVals()
+    {
+        //!!Need to make persistant!!
+        bg = new ColorVals();
+        txt = new ColorVals();
+        bg.rgb = new byte[3];
+        bg.currentColor = Microsoft.Maui.Graphics.Color.FromArgb("#000000");
+        bg.isBG = true;
+        txt.rgb = new byte[3];
+        txt.currentColor = Microsoft.Maui.Graphics.Color.FromArgb("#000000");
+
+        BGHexLabel.Text = bg.currentColor.ToString();
+        HexLabel.Text = txt.currentColor.ToString();
+    }
    
     private void OnBGColorChanged(object sender, ValueChangedEventArgs e)
     {
@@ -29,6 +46,7 @@ public partial class JustColorPicker : ContentPage
         {
             
             BGColorPreview.Color = CalculateColor(bg, BGRedSlider.Value, BGGreenSlider.Value, BGBlueSlider.Value);
+            BGHexLabel.Text = bg.currentColor.ToString();
         }
             
     }
@@ -39,6 +57,7 @@ public partial class JustColorPicker : ContentPage
         {
 
             ColorPreview.Color = CalculateColor(txt, RedSlider.Value, GreenSlider.Value, BlueSlider.Value);
+            HexLabel.Text = txt.currentColor.ToString();
         }
     }
 
@@ -51,8 +70,13 @@ public partial class JustColorPicker : ContentPage
 
 
         _obj.currentColor = Microsoft.Maui.Graphics.Color.FromArgb(Convert.ToHexString(_obj.rgb));
-        _conn.SetTextColor(_obj.currentColor);
+        if(_obj.isBG)
+            _conn.SetBGColor(_obj.currentColor);
+        else
+            _conn.SetTextColor(_obj.currentColor);
         return _obj.currentColor;
     }
+
+    
 }
     

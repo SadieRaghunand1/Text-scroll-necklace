@@ -11,7 +11,7 @@ namespace NecklaceContollerApp
         private Color chosenTextColor = new Color();
         private string displayedString = string.Empty;
 
-
+        #region setters
         public void SetBGColor(Color _color)
         {
             chosenBGColor = _color;
@@ -26,7 +26,24 @@ namespace NecklaceContollerApp
         {
             displayedString = _text;
         }
+        #endregion
 
+        #region getters
+        public string GetBGColor()
+        {
+            return chosenBGColor.ToString();
+        }
+
+        public string GetTextColor()
+        {
+            return chosenTextColor.ToString();
+        }
+
+        public string GetText()
+        {
+            return displayedString;
+        }
+        #endregion
 
 
     }

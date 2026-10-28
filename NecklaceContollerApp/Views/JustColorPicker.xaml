@@ -8,18 +8,18 @@
     Title="ChooseColorPage"
     BackgroundColor="Lavender"
 >
-
-    <VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout>
         <Label
             x:Name="InstructionsBGColor"
             Text="Pick the background color for you keychain!"
             VerticalOptions="Start" 
             HorizontalOptions="Center"
             LineBreakMode="WordWrap"
-            FontSize="16"
+            FontSize="36"
             TextColor="Black" 
             Padding="10"/>
-        <ScrollView>
+        
             <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
 
                 <Label Text="Background color picker" 
@@ -31,7 +31,7 @@
                 </Border>
 
                 <!-- Hex Value Display -->
-                <Label x:Name="BGHexLabel" Text="#000000" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                <Label x:Name="BGHexLabel" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Purple"/>
 
                 <!-- Red Slider -->
                 <VerticalStackLayout>
@@ -52,53 +52,51 @@
                 </VerticalStackLayout>
 
             </VerticalStackLayout>
-        </ScrollView>
 
-        <Label
+
+            <Label
      x:Name="InstructionsTextColor"
      Text="Pick the text color for you keychain!"
      VerticalOptions="Start" 
      HorizontalOptions="Center"
      LineBreakMode="WordWrap"
-     FontSize="16"
+     FontSize="36"
      TextColor="Black" 
      Padding="10"/>
-        <ScrollView>
             <VerticalStackLayout Padding="30" Spacing="20" HorizontalOptions="Center">
 
-                <Label Text="Text color picker" 
+                    <Label Text="Text color picker" 
                    FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
 
-                <!-- Color Preview Box -->
-                <Border StrokeShape="RoundRectangle 12" StrokeThickness="2" WidthRequest="200" HeightRequest="200">
-                    <BoxView x:Name="ColorPreview" Color="Black" />
-                </Border>
+                    <!-- Color Preview Box -->
+                    <Border StrokeShape="RoundRectangle 12" StrokeThickness="2" WidthRequest="200" HeightRequest="200">
+                        <BoxView x:Name="ColorPreview" Color="Black" />
+                    </Border>
 
-                <!-- Hex Value Display -->
-                <Label x:Name="HexLabel" Text="#000000" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center"/>
+                    <!-- Hex Value Display -->
+                <Label x:Name="HexLabel" FontSize="18" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Purple"/>
 
-                <!-- Red Slider -->
-                <VerticalStackLayout>
-                    <Label Text="Red" TextColor="Red" FontAttributes="Bold" />
-                    <Slider x:Name="RedSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Red"/>
+                    <!-- Red Slider -->
+                    <VerticalStackLayout>
+                        <Label Text="Red" TextColor="Red" FontAttributes="Bold" />
+                        <Slider x:Name="RedSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Red"/>
+                    </VerticalStackLayout>
+
+                    <!-- Green Slider -->
+                    <VerticalStackLayout>
+                        <Label Text="Green" TextColor="Green" FontAttributes="Bold" />
+                        <Slider x:Name="GreenSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Green"/>
+                    </VerticalStackLayout>
+
+                    <!-- Blue Slider -->
+                    <VerticalStackLayout>
+                        <Label Text="Blue" TextColor="Blue" FontAttributes="Bold" />
+                        <Slider x:Name="BlueSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Blue"/>
+                    </VerticalStackLayout>
+
                 </VerticalStackLayout>
-
-                <!-- Green Slider -->
-                <VerticalStackLayout>
-                    <Label Text="Green" TextColor="Green" FontAttributes="Bold" />
-                    <Slider x:Name="GreenSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Green"/>
-                </VerticalStackLayout>
-
-                <!-- Blue Slider -->
-                <VerticalStackLayout>
-                    <Label Text="Blue" TextColor="Blue" FontAttributes="Bold" />
-                    <Slider x:Name="BlueSlider" Minimum="0" Maximum="255" ValueChanged="OnTextColorChanged" MinimumTrackColor="Blue"/>
-                </VerticalStackLayout>
-
-            </VerticalStackLayout>
-        </ScrollView>
 
     </VerticalStackLayout>
 
-
+    </ScrollView>
 </ContentPage>
