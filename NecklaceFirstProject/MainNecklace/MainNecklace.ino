@@ -3,6 +3,7 @@
 #include <TouchDrv.hpp>
 #include "TAMC_GT911.h"
 #include <bb_captouch.h>
+#include "Button.h"
 
 #define LCD_SCLK 39
 #define LCD_MOSI 38
@@ -10,11 +11,13 @@
 #define LCD_DC 42
 #define LCD_RST -1
 #define LCD_CS 45
-#define LCD_BL 1
+#define LCD_BL 1 //screen light control
 
 #define LCD_ROTATION 1
 #define LCD_H_RES 240
 #define LCD_V_RES 320
+
+
 
 ////////////
 #pragma region Colors
@@ -46,7 +49,6 @@ const int channel = 0;
 const int resolution = 8;
 
 
-
 //Object definitions
 Arduino_DataBus *bus = new Arduino_ESP32SPI(
   LCD_DC /* DC */, LCD_CS /* CS */,
@@ -55,6 +57,8 @@ Arduino_DataBus *bus = new Arduino_ESP32SPI(
 Arduino_GFX *gfx = new Arduino_ST7789(
   bus, LCD_RST /* RST */, LCD_ROTATION /* rotation */, true /* IPS */,
   LCD_H_RES /* width */, LCD_V_RES /* height */);
+
+bool isOn = true;
 
 //Touch variables
 static BBCapTouch touch;
@@ -105,6 +109,72 @@ uint16_t textBGColors[][2] =
   {GREEN, DGREEN}
 };
 
+
+//STart power test
+/*static void onButtonPressDownCb(void *button_handle, void *usr_data) {
+    Serial.println("Button pressed down");
+}
+static void onButtonPressDownRepeatCb(void *button_handle, void *usr_data)
+{
+    Serial.println("Button press down repeat");
+}
+static void onButtonPressUpCb(void *button_handle, void *usr_data) {
+    Serial.println("Button press Up");
+}
+static void onButtonSingleClickCb(void *button_handle, void *usr_data) {
+    Serial.println("Button single click");
+}
+static void onButtonSingleClickRepeatCb(void *button_handle, void *usr_data)
+{
+    Serial.println("Button single click repeat");
+}*/
+
+void SetupPowerButton()
+{
+  const button_config_t btn_cfg = {0};
+const button_gpio_config_t btn_gpio_cfg = {
+    .gpio_num = 0,
+    .active_level = 0,
+};
+button_handle_t gpio_btn = NULL;
+esp_err_t ret = iot_button_new_gpio_device(&btn_cfg, &btn_gpio_cfg, &gpio_btn);
+if(NULL == gpio_btn) {
+    ESP_LOGE(TAG, "Button create failed");
+}
+
+// create adc button
+const button_config_t btn_cfg = {0};
+button_adc_config_t btn_adc_cfg = {
+    .unit_id = ADC_UNIT_1,
+    .adc_channel = 0,
+    .button_index = 0,
+    .min = 100,
+    .max = 400,
+};
+
+button_handle_t adc_btn = NULL;
+esp_err_t ret = iot_button_new_adc_device(&btn_cfg, &btn_adc_cfg, &adc_btn);
+if(NULL == adc_btn) {
+    ESP_LOGE(TAG, "Button create failed");
+}
+
+// create matrix keypad button
+const button_config_t btn_cfg = {0};
+const button_matrix_config_t matrix_cfg = {
+    .row_gpios = (int32_t[]){4, 5, 6, 7},
+    .col_gpios = (int32_t[]){3, 8, 16, 15},
+    .row_gpio_num = 4,
+    .col_gpio_num = 4,
+};
+button_handle_t matrix_button = NULL;
+esp_err_t ret = iot_button_new_matrix_device(&btn_cfg, &matrix_cfg, btns, &matrix_button);
+if(NULL == matrix_button) {
+    ESP_LOGE(TAG, "Button create failed");
+}
+}
+
+//End power test
+
 //Change text on tap
 void ChangeMessage()
 {
@@ -132,6 +202,17 @@ void setup(void)
   textX = 320;
   textY = 120;
   messageIndex = -1;
+
+  //Button setup
+ /* Button *btn = new Button(GPIO_NUM_9, false);
+    btn->attachPressDownEventCb(&onButtonPressDownCb, NULL);
+    btn->attachPressUpEventCb(&onButtonPressUpCb, NULL);
+    btn->attachPressDownEventCb(&onButtonPressDownRepeatCb, NULL);
+    btn->attachSingleClickEventCb(&onButtonSingleClickCb,NULL);
+    btn->attachSingleClickEventCb(&onButtonSingleClickRepeatCb,NULL);
+    btn->unregisterPressDownEventCb(&onButtonPressDownCb);
+    btn->detachSingleClickEvent();*/
+    SetupPowerButton();
 
 #ifdef GFX_EXTRA_PRE_INIT
   GFX_EXTRA_PRE_INIT();
