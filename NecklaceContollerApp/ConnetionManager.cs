@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.Maui.Controls.Platform.Compatibility;
+using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Runtime.CompilerServices;
-using Microsoft.Maui.Controls.Platform.Compatibility;
+using System.Text;
 
 namespace NecklaceContollerApp
 {
@@ -18,18 +18,28 @@ namespace NecklaceContollerApp
         public ConnetionManager()
         {
             dataAddress = FileSystem.Current.AppDataDirectory + "KeychainData.txt";
-            if(File.Exists(dataAddress))
+
+            using (FileStream fs = new FileStream(dataAddress, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
             {
-                sw = new StreamWriter(dataAddress, true);
-            }
-            else
-            {
-                sw = new StreamWriter(dataAddress, false);
-                sw.WriteLine("\n\n\n");
-                
+                using (StreamReader reader = new StreamReader(fs, leaveOpen: true))
+                using (StreamWriter writer = new StreamWriter(stream: fs, encoding: Encoding.UTF8, bufferSize: 1024, leaveOpen: true))
+                {
+                    if (!File.Exists(dataAddress))
+                    {
+                        sw.WriteLine("\n\n\n");
+                    }
+
+                    //Change stuff ig
+                }
+
+                //Dispose?
+                fs.Dispose();
+
             }
 
-            sr = new StreamReader(dataAddress);
+               
+               
+        
 
             //read file for saved keychain data
             displayedString = File.ReadLines(dataAddress).ElementAtOrDefault(0);
@@ -39,6 +49,9 @@ namespace NecklaceContollerApp
 
             //chosenBGColor = new Color(Color.)
 
+
+
+            
 
         }
 
