@@ -1,9 +1,12 @@
 #include <U8g2lib.h>
 #include <Arduino_GFX_Library.h>
 #include <TouchDrv.hpp>
-#include "TAMC_GT911.h"
 #include <bb_captouch.h>
+#include "esp_log.h"
 #include "Button.h"
+
+#ifndef BUTTON_H
+#define BUTTON_H
 
 #define LCD_SCLK 39
 #define LCD_MOSI 38
@@ -63,6 +66,9 @@ bool isOn = true;
 //Touch variables
 static BBCapTouch touch;
 bool isTouched = false;
+unsigned long touchStartTime = 0;
+bool holdTriggered = false;
+const unsigned long HOLD_DURATION_MS = 10000;
 
 //Variables
 int messageIndex;
@@ -110,70 +116,14 @@ uint16_t textBGColors[][2] =
 };
 
 
-//STart power test
-/*static void onButtonPressDownCb(void *button_handle, void *usr_data) {
-    Serial.println("Button pressed down");
-}
-static void onButtonPressDownRepeatCb(void *button_handle, void *usr_data)
+//If screen is held for 10 seconds, turns on or off
+void TurnOnAndOff()
 {
-    Serial.println("Button press down repeat");
-}
-static void onButtonPressUpCb(void *button_handle, void *usr_data) {
-    Serial.println("Button press Up");
-}
-static void onButtonSingleClickCb(void *button_handle, void *usr_data) {
-    Serial.println("Button single click");
-}
-static void onButtonSingleClickRepeatCb(void *button_handle, void *usr_data)
-{
-    Serial.println("Button single click repeat");
-}*/
 
-void SetupPowerButton()
-{
-  const button_config_t btn_cfg = {0};
-const button_gpio_config_t btn_gpio_cfg = {
-    .gpio_num = 0,
-    .active_level = 0,
-};
-button_handle_t gpio_btn = NULL;
-esp_err_t ret = iot_button_new_gpio_device(&btn_cfg, &btn_gpio_cfg, &gpio_btn);
-if(NULL == gpio_btn) {
-    ESP_LOGE(TAG, "Button create failed");
-}
+  esp_deep_sleep_start()
 
-// create adc button
-const button_config_t btn_cfg = {0};
-button_adc_config_t btn_adc_cfg = {
-    .unit_id = ADC_UNIT_1,
-    .adc_channel = 0,
-    .button_index = 0,
-    .min = 100,
-    .max = 400,
-};
-
-button_handle_t adc_btn = NULL;
-esp_err_t ret = iot_button_new_adc_device(&btn_cfg, &btn_adc_cfg, &adc_btn);
-if(NULL == adc_btn) {
-    ESP_LOGE(TAG, "Button create failed");
+  isOn = !isOn;
 }
-
-// create matrix keypad button
-const button_config_t btn_cfg = {0};
-const button_matrix_config_t matrix_cfg = {
-    .row_gpios = (int32_t[]){4, 5, 6, 7},
-    .col_gpios = (int32_t[]){3, 8, 16, 15},
-    .row_gpio_num = 4,
-    .col_gpio_num = 4,
-};
-button_handle_t matrix_button = NULL;
-esp_err_t ret = iot_button_new_matrix_device(&btn_cfg, &matrix_cfg, btns, &matrix_button);
-if(NULL == matrix_button) {
-    ESP_LOGE(TAG, "Button create failed");
-}
-}
-
-//End power test
 
 //Change text on tap
 void ChangeMessage()
@@ -272,10 +222,35 @@ void loop()
 
   //Detect Touch
   TOUCHINFO ti;
-   if (touch.getSamples(&ti) && ti.count > 0 && !isTouched) 
+   if (touch.getSamples(&ti) && ti.count > 0) 
    {
-    ChangeMessage();
-    isTouched = true;
+    //Check if single touch or if hold
+    if(!isTouched)
+    {
+      if(!isOn)
+      {
+        //wakeup on touch if asleep
+        //Don't run yet, double check this doesn't put device into sleep forever
+        esp_sleep_enable_touchpad_wakeup();
+        return;
+      }
+      ChangeMessage();
+      isTouched = true;
+      holdTriggered = false;
+      touchStartTime = millis();
+    }
+    else if (!holdTriggered && (millis() - touchStartTime >= HOLD_DURATION_MS))
+    {
+        holdTriggered = true;
+        TurnOnAndOff();
+    }
+   
+   }
+   else if(touch.getSamples(&ti) && !ti.count > 0)
+   {
+    if (isTouching) {
+        isTouching = false;
+        holdTriggered = false;
    }
    else {
     isTouched = false;
